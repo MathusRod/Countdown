@@ -2,9 +2,34 @@
 
 body {
   background: black;
+  color: #f5f5f5;
   margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.natal, .ano-novo {
+
+.main {
+  width: 1000px;
+  height: 600px;
+  background: #f5f5f5;
+  color: #121212;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+}
+.main label {
+  margin-top: 10px;
+}
+.main #seletor {
+  width: 400px;
+  text-align: center;
+}
+.evento {
+  width: 900px;
   padding: 50px;
   background: #f5f5f5;
   color: #121212;
@@ -14,18 +39,10 @@ body {
   justify-content: center;
   margin-bottom: 30px;
 }
-.natal h1 {
+.evento h1 {
   margin-top: 50px;
   text-align: center;
   font-size: 2.5rem;
-}
-.natal h1 strong {
-  color: #f05454;
-  text-transform: uppercase;
-  font-size: bold;
-}
-.ano-novo h1 strong{
-  color: #F99417;
 }
 .contagem {
   display: flex;
@@ -33,17 +50,34 @@ body {
   justify-content: center;
 }
 .contagem p {
+  width: 90px;
   border-radius: 10px;
   padding: 15px;
   font-size: 1.875rem;
   background: #2a6eb3b6;
   font-family: Audiowide;
 }
-.tree {
-  width: 300px;
-  height: 300px;
+
+.natal h1 strong {
+  color: #f05454;
+  text-transform: uppercase;
+  font-weight: bold;
 }
+.ano-novo h1 strong {
+  color: #f99417;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.halloween h1 strong {
+  color: #d27c2c;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.tree,
+.pumpkin,
 .firework {
+  margin-top: 50px;
   width: 300px;
   height: 300px;
 }
