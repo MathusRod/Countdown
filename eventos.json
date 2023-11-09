@@ -2,19 +2,19 @@
   {
     "evento": "Natal",
     "option": "natal",
-    "img": "../img/christmas-tree.svg",
+    "img": "./img/christmas-tree.svg",
     "imgClass": "tree"
   },
   {
     "evento": "Ano novo",
     "option": "ano-novo",
-    "img": "../img/fireworks.svg",
+    "img": "./img/fireworks.svg",
     "imgClass": "firework"
   },
   {
     "evento": "Halloween",
     "option": "halloween",
-    "img": "../img/pumpkin.svg",
+    "img": "./img/pumpkin.svg",
     "imgClass": "pumpkin"
   }
 ]

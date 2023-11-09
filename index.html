@@ -11,12 +11,13 @@
 <body>
   <div class="main">
     <label for="seletor">Selecione uma data comemorativa:</label>
-    <select name="seletor" id="seletor">
-      <option value="0">Natal</option>
-      <option value="1">Ano novo</option>
-      <option value="2">Halloween</option>
-    </select>
-    <button class="btn">Enviar</button>
+    <div class="btns">
+      <button class="btn zero" data-value="0">Natal</button>
+      <button class="btn one" data-value="1">Ano novo</button>
+      <button class="btn two" data-value="2">Halloween</button>
+      <button class="btn-delete -one">Apagar Evento</button>
+    </div>
+    <!-- <img src="./img/toki.svg" alt="" > -->
   </div>
   <script type="module" src="./js/script.js"></script>
 </body>
