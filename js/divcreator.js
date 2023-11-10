@@ -43,9 +43,15 @@ export default function initDivCreator() {
   function createEvento(eventoJSON, optionValue) {
     const index = optionValue;
     const div = document.createElement("div");
-    div.classList.add(`${eventoJSON[index].option}`, "evento");
-    div.innerHTML = `<img class="${eventoJSON[index].imgClass}" src="${eventoJSON[index].img}" alt=""><div class="margem"><h1>Falta quantos dias para o <strong>${eventoJSON[index].evento}</strong>?</h1><div class="contagem"><p class="dias"></p></div></div>`;
-    return div;
+    if (window.innerWidth > 500) {
+      div.classList.add(`${eventoJSON[index].option}`, "evento");
+      div.innerHTML = `<img class="${eventoJSON[index].imgClass}" src="${eventoJSON[index].img}" alt=""><div class="margem"><h1>Falta quantos dias para o <strong>${eventoJSON[index].evento}</strong>?</h1><div class="contagem"><p class="dias"></p></div></div>`;
+      return div;
+    } else {
+      div.classList.add(`${eventoJSON[index].option}`, "evento");
+      div.innerHTML = `<img class="${eventoJSON[index].imgClass}" src="${eventoJSON[index].img}" alt=""><div class="margem"><h1>Falta quantos dias para o <strong>${eventoJSON[index].evento}</strong>?</h1><div class="contagem"><p class="dias"></p><p class="minutos"></p></div></div>`;
+      return div;
+    }
   }
 }
 

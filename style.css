@@ -30,8 +30,8 @@ body {
   width: 200px;
   height: 200px;
   position: absolute;
-  left: 30px;
-  top: -10px;
+  left: -30px;
+  top: -5px;
 }
 
 .main label {
@@ -125,4 +125,61 @@ body {
   margin: 0 auto;
   width: 100px;
   height: 100px;
+}
+
+@media (max-width: 500px) {
+  body {
+    justify-content: center;
+
+  }
+  .main {
+    margin-top: 40px;
+    width: 360px;
+    height: 600px;
+    justify-content: center;
+  }
+  .main label {
+    font-size: 20px;
+  }
+  .btns {
+    width: 360px;
+    gap: 5px;
+  }
+  .btns button {
+    width: 160px;
+  }
+  .toki{
+    width: 340px;
+    height: 360px;
+  }
+  .toki.none{
+    top: -100px;
+    left: 140px;
+    width: 70px;
+    height: 90px;
+  }
+  .evento{
+    width: 360px;
+  }
+  .evento h1{
+    font-size: 35px;
+  }
+  .contagem{
+    width: 360px;
+    
+  }
+  .contagem p{
+    padding: 10px;
+    font-size: 1.5rem;
+    width: 320px;
+    border-bottom-right-radius:0;
+    border-bottom-left-radius:0;
+  }
+  .contagem p:last-child{
+    padding-top: 0;
+    border-top-right-radius:0;
+    border-top-left-radius:0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
 }
